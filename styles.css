@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-text {
+    align-self: center;
+    padding: 0.5em;
+}
+
+#bridge {
+    width: 40%;
+    object-fit: cover;
+    padding: 2em; 
+    min-width: 350px;
+    max-width: 350px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    width: 100%;
+    padding: 0 5em;
+}
+
+header {
+    display: flex;
+    background-color: #1f2937;
+    color: #f9faf8;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.header-links {
+    font-size: 18px;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    gap: 16px;
+    padding: 14px;
+}
+
+.first-group, .second-group{
+    display: flex;
+    gap: 2em;
+}
+
+ul {
+    list-style: none;
+    padding: none;
+    margin: none;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1em 5em;
+    width: 100%;
+}
+
+.header-primary {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+}
+
+.hero {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.sign-up {
+    background-color: #3882f6;
+    border-radius: 4px;
+    width: 100px;
+    color: white;
+    height: 28px;
+    border: none;
+}
+
+.article-image {
+    width: 12em;
+    height: 12em;
+    border-radius: 15%;
+    border: 2px solid #3882f6;
+    flex: 1 0 auto;
+    object-fit: cover;
+}
+
+.articles {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    padding: 1em;
+    flex: 1;
+}
+
+.heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color:#1f2937; 
+}
+
+.article-link {
+    display: flex;
+    flex-flow: wrap row;
+    max-width: 12em;
+    text-align: center;
+    flex: 1;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: light;
+    color: #1f2937;
+}
+
+.quote-text {
+    padding: 2em 2em 0 2em;
+}
+
+.quote-source {
+    text-align:end;
+    padding: 0 2em 2em 2em;
+    font-weight: bold;
+    font-style: none;
+}
+
+
+
+
+@media only screen and (max-width: 760px) {
+
+    .header-content {
+        display:flex;
+        flex-flow:column wrap;
+    }
+
+    .header-primary {
+        width: 80%;
+    }
+
+    .articles {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
