@@ -127,6 +127,7 @@ ul {
     font-style: italic;
     font-weight: light;
     color: #1f2937;
+    width: 100vw;
 }
 
 .quote-text {
@@ -138,9 +139,49 @@ ul {
     padding: 0 2em 2em 2em;
     font-weight: bold;
     font-style: none;
+    font-size: 28px;
 }
 
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
 
+.call-to-action-background {
+    background-color: #3882f6;
+    width: 75vw;
+    border-radius: 10px;
+    padding: 2em;
+    display: flex;
+    padding: 2em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.newsletter {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+#newsletter-button {
+    border: 2px solid white;
+}
+
+.hook {
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+    margin: 4px;
+}
+
+.newsletter-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-content: center;
+}
 
 
 @media only screen and (max-width: 760px) {
@@ -158,4 +199,5 @@ ul {
         display: flex;
         flex-wrap: wrap;
     }
+    
 }
